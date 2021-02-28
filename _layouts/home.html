@@ -34,4 +34,82 @@ layout: default
     </div>
   </div>
 
+<p></p>
+
+<div class="slideshow-container">
+<div class="img-box">
+<div class="mySlides fade">
+  <img src="img/m1/8.jpg" width="700" height="400">
+  <div class="text">Method 1</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/m2/9.jpg" width="700" height="400">
+  <div class="text">Method Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/m3/10.jpg" width="700" height="400">
+  <div class="text">Method Three</div>
+</div>
+
+<div class="mySlides fade">
+<img src="img/m4/7.jpg" width="700" height="400">
+<div class="text">Method Four</div>
+</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<p></p>
+<hr></hr>
+<p></p>
+<p></p>
+
+
+
+<div class="img-box">
+    <img src="img/logo.png" width="550" height="250">
+</div>
+
+<div class="text-center">
+  <p>You can download the apps to view Beytepe campus with AR experience.
+      You can download the method you want to use.</p>
+</div>
+
+
+<div class="text-center">
+  <h3><a href="https://drive.google.com/drive/folders/1CuDeCQh2SBYSE0whY0MBZrfca7C8GICn" class="button">DOWNLOAD</a></h3>
+</div>
+
+
+
 

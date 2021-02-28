@@ -1,27 +1,45 @@
 // Styling for the contact page
-
+p{
+  position: relative;
+  padding-top: 10px;
+}
 .box {
   position: relative;
-  width: 1000px;
+  width: 800px;
   height: 250px;
   margin: 120px auto;
-  margin-left: -120px;
+  margin-left: 0px;
   display: flex;
 }
 
 .item1 h2 {
   margin: 0;
   padding-left: 300px;
-  font-size: 150%;
+  font-size: 100%;
   text-align: left;
-  padding-top: 220px;
+  padding-top: 20px;
 
 }
-
-.box img {
-  float: left;
-  padding: 0 10px 0 0;
+.img-box img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px
 }
+
+.button {
+  background-color: #80bdff; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 
 
 
@@ -82,3 +100,64 @@
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid $gray-300;
 }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #80bdff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 5}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+

@@ -615,6 +615,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+
 }
 
 
@@ -10005,6 +10006,7 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
+
 }
 
 
