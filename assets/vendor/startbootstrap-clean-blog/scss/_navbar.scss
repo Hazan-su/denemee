@@ -70,10 +70,10 @@
       border-bottom: 1px solid darken($white, .05);
       background-color: fade-out($white, .1);
       .navbar-brand {
-        color: $gray-900;
+        color: white;
         &:focus,
         &:hover {
-          color: $primary;
+          color: white;
         }
       }
       .navbar-nav {
@@ -82,7 +82,7 @@
             color: white;
             &:focus,
             &:hover {
-              color: $primary;
+              color: white;
             }
           }
         }
